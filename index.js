@@ -8,7 +8,7 @@ const uploadRouter = require('./routes/uploads');
 const orderRouter = require('./routes/order');
 const dotenv = require('dotenv').config();
 
-const url = 'mongodb://localhost:27017/foodorderingsystem'
+const url = 'mongodb://localhost:27017/mobilemanagementsystem'
 const PORT = 3002;
 const app = express();
 const auth = require('./auth');

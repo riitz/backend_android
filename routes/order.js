@@ -6,6 +6,8 @@ const router = express.Router();
 router.route('/')
 .get((req,res,next)=>{
     Order.find({})
+    .populate('user')
+    .populate('product')
     .then((order)=>{
         res.statusCode = 200;
         res.json(order);
